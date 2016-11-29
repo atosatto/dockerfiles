@@ -21,11 +21,11 @@ RUN apk add --no-cache --virtual .build-deps \
   && pecl install \
     # PHP 5.6
     pthreads-2.0.10 \
-    yaml \
+    yaml-1.3.0 \
     weakref-0.2.6 \
     # PHP 7.0
-    # pthreads \
-    # yaml-2.0.0 \
+    # pthreads-3.1.6 \
+    # yaml-2.0.0 \
     # weakref-0.3.2 \
   && docker-php-ext-enable \
     pthreads \
@@ -34,6 +34,8 @@ RUN apk add --no-cache --virtual .build-deps \
   && docker-php-ext-install \
     sockets \
     opcache \
+    bcmath \
+    pcntl \
   && apk del .build-deps
 
 WORKDIR /pocketmine
@@ -43,7 +45,6 @@ VOLUME [ "/pocketmine/plugins" ]
 COPY docker-start.sh /pocketmine/start.sh
 COPY php.ini /pocketmine/php.ini
 COPY server.properties /pocketmine/server.properties
-
 
 # add the pocketmine user, group and workdir
 RUN addgroup -S pocketmine \

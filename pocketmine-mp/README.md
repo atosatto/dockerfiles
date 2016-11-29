@@ -4,9 +4,9 @@
 $ docker pull atosatto/pocketmine-mp:latest
 ```
 
-|  Available Versions | Tag Aliases      |
-| --------------------|:----------------:|
-| 1.4.1               | latest           |
+|  Available Versions | Tag Aliases  |
+| --------------------|:------------:|
+| 1.4.1               | latest       |
 
 ## Usage
 
