@@ -1,4 +1,4 @@
-![Genisys](https://gitlab.com/uploads/group/avatar/504935/itx.png)
+# Genisys
 
 ```
 $ docker pull atosatto/genisys:latest
@@ -10,7 +10,7 @@ $ docker pull atosatto/genisys:latest
 
 ## Usage
 
-Spin up your own genisys private Minecraft server with
+Spin up your own Genisys private Minecraft PE server with
 
 ```
 $ docker run -d --name genisys -p 19132:19132/tcp -p 19132:19132/udp  atosatto/genisys

@@ -10,7 +10,7 @@ $ docker pull atosatto/pocketmine-mp:latest
 
 ## Usage
 
-Spin up your own PocketMine-MP private Minecraft server with
+Spin up your own PocketMine-MP private Minecraft PE server with
 
 ```
 $ docker run -d --name pocketmine-mp -p 19132:19132/tcp -p 19132:19132/udp  atosatto/pocketmine-mp
