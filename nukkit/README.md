@@ -16,7 +16,7 @@ Spin up your own Nukkit private Minecraft PE server with
 $ docker run -d --name nukkit -p 19132:19132/tcp -p 19132:19132/udp  atosatto/nukkit
 ```
 
-To customize the default `server.properties` run
+To customize the default `server.properties` and `nukkit.yml` run
 
 ```
 $ docker run -d --name nukkit -v $(pwd)/myconfigdir:/nukkit/config -p 19132:19132/tcp -p 19132:19132/udp atosatto/nukkit
