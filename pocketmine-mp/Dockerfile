@@ -2,7 +2,7 @@ FROM php:5.6-zts-alpine
 
 LABEL MAINTAINER="Andrea Tosatto <andrea@tosatto.me>"
 
-# installing base tools and su-exec for easy step-down from root
+# installing base tools
 RUN apk add --no-cache --update \
   ca-certificates \
   openssl \
@@ -61,6 +61,5 @@ ENTRYPOINT ["./start.sh"]
 RUN wget -q -O PocketMine-MP.phar $POCKETMINE_DOWNLOAD_URL
 
 EXPOSE 19132
-EXPOSE 19132/udp
 
 CMD ["php", "-c", "php.ini", "PocketMine-MP.phar"]

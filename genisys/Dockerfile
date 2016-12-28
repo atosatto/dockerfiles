@@ -49,6 +49,5 @@ RUN curl -L -o genisys.zip $GENISYS_DOWNLOAD_URL \
   && rm -f genisys.zip
 
 EXPOSE 19132
-EXPOSE 19132/udp
 
 CMD ["php", "-c", "php.ini", "genisys.phar"]
