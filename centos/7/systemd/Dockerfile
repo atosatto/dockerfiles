@@ -1,6 +1,6 @@
 FROM atosatto/centos:7
 
-MAINTAINER Andrea Tosatto <andrea@tosatto.me>
+LABEL maintainer "Andrea Tosatto <andrea@tosatto.me>"
 
 ENV container docker
 

@@ -1,7 +1,7 @@
 FROM centos:7
 
-MAINTAINER Andrea Tosatto  <andrea@tosatto.me>
+LABEL maintainer "Andrea Tosatto  <andrea@tosatto.me>"
 
 # Install some extra packages
-RUN yum install -y iproute \
+RUN yum install -y iproute e2fsprogs \
   && yum clean all
